@@ -2,8 +2,7 @@
 
 float math_function(float x)
 {
-    // TODO: compute function and return y value
-    return 0;
+    return 2 * x;
 }
 
 int main()
