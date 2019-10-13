@@ -19,7 +19,7 @@ int main()
     // TODO: actually calcuate the integrate
     for(float x = boundA; x < boundB; x += dt)
     {
-        integral += math_function(x);
+        integral += math_function(x) * dt;
     }
 
     printf("Integral between %d and %d with dt of %f is: %f\n", boundA, boundB, dt, integral);
