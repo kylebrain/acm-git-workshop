@@ -18,6 +18,10 @@ int main()
 
     float integral = 0;
     // TODO: actually calcuate the integrate
+    for(float x = boundA; x < boundB; x += dt)
+    {
+        integral += math_function(x);
+    }
 
     printf("Integral between %d and %d with dt of %f is: %f\n", boundA, boundB, dt, integral);
     return 0;
